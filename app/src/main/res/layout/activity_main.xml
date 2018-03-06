@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.zhuandian.circlepercentview.MainActivity">
 
-    <TextView
+    <com.zhuandian.circlepercentview.PercentCircle
+        android:id="@+id/pc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:background_color="#FF4081"
+        app:radius="250"
+        app:ring_color="#3F51B5" />
+
+    <com.zhuandian.circlepercentview.PercentCircle
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:percent_target="90"
+        app:percent_text_color="#ff0000"
+        app:percent_text_desc="错误率"
+        app:radius="150" />
 
-</android.support.constraint.ConstraintLayout>
+    <com.zhuandian.circlepercentview.PercentCircle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:background_color="#bcb6b6"
+        app:text_str_color="#332233"
+        app:percent_target="25"
+        app:percent_text_color="#333333"
+        app:ring_color="#7c0d25"
+        app:radius="200" />
+
+    <!--<com.zhuandian.circlepercentview.MyOvalView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+</LinearLayout>
