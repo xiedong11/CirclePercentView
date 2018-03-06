@@ -24,7 +24,7 @@
         app:percent_text_desc="错误率"
         app:radius="150" />
 
-    <com.zhuandian.circlepercentview.PercentCircle
+    <com.zhuandian.circlepercent.PercentCircle
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:background_color="#bcb6b6"
