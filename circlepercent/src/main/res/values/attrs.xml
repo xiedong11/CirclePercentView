@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PercentCircle">
+        <attr name="arcColor" format="color" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="ring_color" format="color" />
+        <attr name="centerTextSize" format="dimension" />
+        <attr name="radius" format="integer" />
+        <attr name="percent_text_color" format="color" />
+        <attr name="text_str_color" format="color" />
+        <attr name="background_color" format="color" />
+        <attr name="percent_text_desc" format="string" />
+        <attr name="percent_target" format="string" />
+    </declare-styleable>
+</resources>
